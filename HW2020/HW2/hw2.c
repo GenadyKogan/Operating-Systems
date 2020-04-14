@@ -1,8 +1,3 @@
-/*
-Genady Kogan 328956537
-Sapir Benzino 312581838
-*/
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
