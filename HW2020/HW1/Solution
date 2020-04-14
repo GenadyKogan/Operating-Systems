@@ -1,0 +1,51 @@
+task 1:
+(1)	cat > test1.txt
+(2)	Gena
+		Lital
+		Gaya
+		ctrl + d
+(3) mv test.txt test1.txt	
+
+task 2:
+(a)	mkdir myfolder
+(b)	mkdir -p myfolder/{f1,f2,f3}
+(c)	rm -r myfolder
+
+task 3:
+mkdir -p OS/Homework
+mkdir -p OS/Solutions
+cat > OS/Lab1.txt
+cat > OS/Homework/Hw_1.txt
+cat > OS/Solutions/Hw_1_sol.txt
+/*OR Solution with nano*/
+mkdir -p OS/{Homework,Solutions} && nano OS/Lab1.txt && nano OS/Homework/Hw_1.txt && nano OS/Solutions/Hw_1_sol.txt
+/*-----------------*/
+(a) cp OS/Homework/Hw_1.txt OS
+(b) mv OS/Lab1.txt OS/Homework
+(c) wc -c OS/Solutions/Hw_1_sol.txt
+  	     wc -w OS/Solutions/Hw_1_sol.txt
+  	     wc -l OS/Solutions/Hw_1_sol.txt
+/*OR*/
+wc -c OS/Solutions/Hw_1_sol.txt && wc -l OS/Solutions/Hw_1_sol.txt && wc -w OS/Solutions/Hw_1_sol.txt
+/*OR*/
+wc  OS/Solutions/Hw_1_sol.txt
+
+task 4:
+(a) chmod ugo+x testfile.txt && chmod g-r testfile.txt && chmod g+w testfile.txt
+(b) chmod 742 testfile.txt
+(c) ls -l
+(d) drwx-wx---
+
+task 5:
+ls -l | find -type d | wc -l
+task 6:
+
+grep -d recurse  hello $(find .. -name "*.txt") | wc -l
+
+task 7:
+cat > file.txt
+if  sort -c file.txt ; then echo "file is sorted"; else sort -n file.txt > sortesFile.txt && echo "Text sorted in sortedFile"; fi
+
+task 8:
+cat > name_file.txt
+pr -6 -t -3 name_file.txt
