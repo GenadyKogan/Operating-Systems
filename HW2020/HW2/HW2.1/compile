@@ -1,0 +1,7 @@
+#!/bin/bash
+clear
+
+gcc src/shell.c src/single_commands.c src/globals.c src/piped_commands.c  -o _executable
+./_executable
+
+
